@@ -1,0 +1,29 @@
+
+// pasos de node ----------------1-----
+import express from 'express'
+const app = express()
+app.listen(3000)
+console.log('server en consola');
+
+// ----------------2 ----------------
+
+import express from 'express'
+const app = express()
+
+app.get('/employees',(req,res)=>res.send('obteniendo empleados'))
+app.post('/employees',(req,res)=>res.send('creando empleados'))
+app.put('/employees',(req,res)=>res.send('actualizando empleados'))
+app.delete('/employees',(req,res)=>res.send('eliminando empleados'))
+app.listen(3000)
+console.log('server en consola');
+
+// ----------------3----------------------
+
+instalamos tunder post(extension de VSCODE) para crear peticiones
+
+//--------------------4------------------------
+
+generador de errores js
+
+throw new Error('something wrong')
+
