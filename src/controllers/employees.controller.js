@@ -4,7 +4,7 @@ import {
 export const getEmployees = async (req, res) => {
     try {
 
-        const [rows] = await pool.query('SELECT * FROM employe')
+        const [rows] = await pool.query('SELECT * FROM companydb')
         res.json(rows)
     } catch (error) {
         return res.status(500).json({
